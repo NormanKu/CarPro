@@ -1,0 +1,164 @@
+:root{
+  --primaryColor: #f2f2f2;
+  --secondaryColor: #000000;
+  --textColor: #000000;
+  --greyColor: #757575;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+}
+
+.home {
+  padding-top: 8rem;
+}
+
+.secContainer {
+  padding: 0 1.5rem;;
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+
+  .homeText{
+    .homeSpan{
+      font-size: 15px;
+      color: var(--textColor);
+      font-weight: 400;
+    }
+
+    .homeTitle{
+      color: var(--blackColor);
+      font-weight: 700;
+      font-size: 30px;
+    }
+
+    .btns{
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .btn{
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-weight: 600;
+      margin-top: .5rem;
+      font-size: 12px;
+
+      &:hover{
+        background: var(--secondaryColor);
+        color: var(--whiteColor);
+      }
+    }
+
+    .btn:nth-child(1){
+      background: var(--primaryColor);
+      color: var(--secondaryColor);
+    }
+
+    .btn:nth-child(2){
+      &:hover{
+        background: var(--primaryColor);
+        color: var(--textColor);
+      }
+    }
+  }
+
+  .homeImage {
+    margin: auto;
+  }
+}
+
+.scroll-up {
+  position: fixed;
+  font-size: 2.5rem;
+  color: white;
+  background-color: orange;
+  border: 3px solid white;
+  width: 2rem;
+  height: 2rem;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 20;
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.show-scroll {
+  display: flex;
+}
+
+//Media queries to make Home div responsive
+@media screen and (min-width: 520px) {
+  .home{
+    .secContainer{
+      .homeText{
+        .homeSpan{
+          font-size: 18px;
+        }
+
+        .homeTitle{
+          font-size: 35px;
+        }
+
+        .btns{
+          .btn{
+            font-size: 14px;
+          }
+        }
+      }
+
+      .homeImage{
+        max-width: 85%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .home{
+    padding-top: 10rem;
+    .secContainer{
+      gap: 2.5rem;
+      .homeText{
+        .homeSpan{
+          font-size: 21px;
+        }
+
+        .homeTitle{
+          font-size: 45px;
+        }
+
+        .btns{
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 996px) {
+  .home{
+    padding-top: 12rem;
+    .secContainer{
+      gap: 3rem;
+      .homeText{
+        .homeSpan{
+          font-size: 25px;
+        }
+
+        .homeTitle{
+          font-size: 55px;
+        }
+
+        .btns{
+          .btn{
+            font-size: 16px;
+            padding: 1rem 2rem;
+          }
+        }
+      }
+    }
+  }
+}
