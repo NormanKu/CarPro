@@ -52,7 +52,7 @@ function Vehicle() {
 
           </div>
         </div>
-        {/* <Banner /> */}
+        <Banner />
         <Footer />
       </section>
     </>
