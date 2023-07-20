@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './Pages/Home';
 import { Route, Routes } from 'react-router-dom';
 import About from './Pages/About';
-import Vehicle from './Pages/vehicle';
+import Vehicle from './Pages/Vehicle';
 import Testimonials from './Pages/Testimonials';
 import Teams from './Pages/Teams';
 import Contact from './Pages/Contact';
