@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import ReviewCard from "../components/ReviewCard";
-import "../stylesheets/pages/testimonials.css";
+import "../stylesheets/pages/testimonials/Testimonials.css";
 import Car1 from "../assets/images/car1.jpg";
 import person1 from "../assets/images/user1.png";
 function Testimonials() {
