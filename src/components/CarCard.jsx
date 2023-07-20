@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import "../stylesheets/Components/carcard.css"
+import "../stylesheets/components/carcard.css"
 
 function CarCard({ car }) {
   return (
