@@ -3,5 +3,19 @@
   "Vehicle" : "すべての車",
   "Testimonials": "利用者の声",
   "Sales" : "営業員",
-  "Contact": "お問い合わせ"
+  "Contact": "お問い合わせ",
+  "search":{
+    "title": "どの車両を探していますか？",
+    "type": "タイプ",
+    "year": "年",
+    "model": "モデル",
+    "price": "価格",
+    "search": "検索"
+  },
+  "trending": {
+    "title": "あなたの近くでトレンド",
+    "carTitle": "中古",
+    "miles": "マイル",
+    "seller": "ベストセラー"
+  }
 }

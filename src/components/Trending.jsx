@@ -1,18 +1,21 @@
-import React from 'react'
 import "../stylesheets/Trending.css";
 import { BsArrowLeftShort } from "react-icons/bs";
 import { BsArrowRightShort } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 import car1 from "../assets/images/car1.jpg";
 import car2 from "../assets/images/car2.jpg";
 import car3 from "../assets/images/car3.jpg";
 
 const Trending = () => {
+      // Invoke useTranslation and destructure `t` for translation
+      const { t } = useTranslation();
+
   return (
     <div className='trending section'>
       <div className="secContainer container">
        <div className="secHeading flex">
         <h3 className="secTitle">
-          Trending Near You
+          {t("trending.title")}
         </h3>
 
         <div className="navBtns flex">
@@ -28,10 +31,10 @@ const Trending = () => {
               <img src={car1} alt="Car Image" />
             </div>
             <h5 className="carTitle">
-              Used 2019 Audi S4 Premium Plus
+              {t("trending.carTitle")} 2019 Audi S4 Premium Plus
             </h5>
             <span className="miles">
-              11457 Miles
+              11457 {t("trending.miles")}
             </span>
             <span className="AWD">
               AWD 4-Cylinder Turbo
@@ -42,7 +45,8 @@ const Trending = () => {
                 $41,200
               </span>
               <span className="seller">
-                Best Seller
+                {t("trending.seller")}
+
               </span>
             </div>
           </div>
@@ -53,10 +57,10 @@ const Trending = () => {
               <img src={car2} alt="Car Image" />
             </div>
             <h5 className="carTitle">
-              Used 2019 Audi S4 Premium Plus
+            {t("trending.carTitle")} 2019 Audi S4 Premium Plus
             </h5>
             <span className="miles">
-              11457 Miles
+              11457 {t("trending.miles")}
             </span>
             <span className="AWD">
               AWD 4-Cylinder Turbo
@@ -67,7 +71,7 @@ const Trending = () => {
                 $41,200
               </span>
               <span className="seller">
-                Best Seller
+              {t("trending.seller")}
               </span>
             </div>
           </div>
@@ -78,10 +82,10 @@ const Trending = () => {
               <img src={car3} alt="Car Image" />
             </div>
             <h5 className="carTitle">
-              Used 2019 Audi S4 Premium Plus
+              {t("trending.carTitle")} 2019 Audi S4 Premium Plus
             </h5>
             <span className="miles">
-              11457 Miles
+              11457 {t("trending.miles")}
             </span>
             <span className="AWD">
               AWD 4-Cylinder Turbo
@@ -92,7 +96,7 @@ const Trending = () => {
                 $41,200
               </span>
               <span className="seller">
-                Best Seller
+              {t("trending.seller")}
               </span>
             </div>
           </div>

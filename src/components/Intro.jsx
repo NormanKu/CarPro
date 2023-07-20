@@ -50,7 +50,7 @@ const Intro = () => {
 
   {/* page up */}
   <div onClick={scrollToTop} className={`scroll-up ${goUp ? "show-scroll" : ""}`}>
-  <i className="fa-solid fa-angle-up">Up</i>
+  <i className="fa-solid fa-up-long"></i>
   </div>
   </>
   );

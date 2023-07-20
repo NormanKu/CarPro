@@ -22,12 +22,42 @@
       }
   }
 
+  .langMenu {
+    position: absolute;
+    background: var(--primaryColor);
+    border: rgb(237, 237, 237) 1px solid;
+    width: 80%;
+    font-weight: 800;
+    top: -100rem;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 4rem;
+    transition: .3s ease;
+    z-index: 2000;
+
+    .lang{
+      gap: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0;
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+
   @media screen and (max-width: 768px) {
       .navbar {
         position: absolute;
         background: var(--primaryColor);
         border: rgb(237, 237, 237) 1px solid;
         width: 80%;
+        font-weight: 800;
         top: -100rem;
         right: 50%;
         left: 50%;
@@ -85,7 +115,7 @@
     }
 
     .signUp {
-      gap: .5rem;
+      gap: 1rem;
       .text {
         padding: 3px 10px;
         cursor: pointer;
@@ -97,8 +127,6 @@
           color: var(--blackColor);
         }
       }
-
-
 
       .toggleNavBarIcon {
         background: none;
@@ -112,6 +140,11 @@
     .showNavbar {
       top: 10rem;
       transition: 0.5s ease;
+  }
+
+  .showLangMenu {
+    top: 10rem;
+    transition: 0.5s ease;
   }
 }
 
@@ -167,6 +200,8 @@
         }
       }
     }
+
+
 
     .signUp{
       .text{

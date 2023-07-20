@@ -1,67 +1,93 @@
-
 import Footer from "../components/Footer";
+import Banner from "../components/Banner";
+import ReviewCard from "../components/ReviewCard";
+import "../stylesheets/pages/Testimonials/Testimonials.css";
+import Car1 from "../assets/images/car1.jpg";
+import person1 from "../assets/images/user1.png";
 function Testimonials() {
+  const reviews = [
+    {
+      car: Car1,
+      name: "2023 Cadillac",
+      price: "$45",
+      details: "Good cars are safe, fast, affordable to purchase, economical to purchase, economical to operate, reliable, comfortable, and attractive.",
+      userImg: person1,
+      user: "Jakline Nelson",
+      title: "Chief Editor",
+      rating: "4.84"
+    },
+    {
+      car: Car1,
+      name: "2024 Tesla",
+      price: "$50",
+      details: "Electric cars are quiet, fun-to-drive, and offer feature-rich cabins.",
+      userImg: person1,
+      user: "John Doe",
+      title: "Senior Editor",
+      rating: "4.5"
+    },
+    {
+      car: Car1,
+      name: "2022 BMW",
+      price: "$60",
+      details: "BMW cars have been meticulously engineered to deliver precise handling.",
+      userImg: person1,
+      user: "Emma Watson",
+      title: "Content Writer",
+      rating: "4.6"
+    },
+    {
+      car: Car1,
+      name: "2023 Mercedes",
+      price: "$70",
+      details: "Mercedes cars are known for their luxury features and smooth ride.",
+      userImg: person1,
+      user: "Robert Downey Jr.",
+      title: "Product Analyst",
+      rating: "4.7"
+    },
+    {
+      car: Car1,
+      name: "2023 Audi",
+      price: "$80",
+      details: "Audi cars are well-known for their sleek designs and top-quality interiors.",
+      userImg: person1,
+      user: "Scarlett Johansson",
+      title: "Quality Analyst",
+      rating: "4.8"
+    }
+  ];
+
+
   return (
     <>
-      <section className="Testimonials-page">
+      <section className="testimonialsPage">
         {/* <HeroPages name="Testimonials" /> */}
         <div className="container">
-          <div className="Testimonials-main">
-            {/* <img
-              className="Testimonials-main__img"
-              src={TestimonialsMain}
-              alt="car-renting"
-            /> */}
-            <div className="Testimonials-main__text">
-              <h3>Testimonials Company</h3>
-              <h2>You start the engine and your adventure begins</h2>
+          <div className="testimonialsContent">
+            <div className="testimonialsContentTitle">
+              <h3>Inspected by the Masses</h3>
+              <h2>Reflections from our Customers</h2>
               <p>
-                Certain but she but shyness why cottage. Guy the put instrument
-                sir entreaties affronting. Pretended exquisite see cordially the
-                you. Weeks quiet do vexed or whose. Motionless if no to
-                affronting imprudence no precaution. My indulged as disposal
-                strongly attended.
+                Uncover the significant strides we&apos;ve undertaken for our
+                patrons through their reflections. They&apos;ve embraced our
+                services and witnessed the outcomes, and they&apos;re zealous to
+                convey their affirmative experiences with you.
               </p>
-              <div className="Testimonials-main__text__icons">
-                <div className="Testimonials-main__text__icons__box">
-                  {/* <img src={Box1} alt="car-icon" /> */}
-                  <span>
-                    <h4>20</h4>
-                    <p>Car Types</p>
-                  </span>
-                </div>
-                <div className="Testimonials-main__text__icons__box">
-                  {/* <img src={Box2} alt="car-icon" /> */}
-                  <span>
-                    <h4>85</h4>
-                    <p>Rental Outlets</p>
-                  </span>
-                </div>
-                <div className="Testimonials-main__text__icons__box">
-                  {/* <img src={Box3} alt="car-icon" className="last-fk" /> */}
-                  <span>
-                    <h4>75</h4>
-                    <p>Repair Shop</p>
-                  </span>
-                </div>
-              </div>
+
             </div>
+            <div className="allTestimonials">
+              {
+                reviews.map((reviewItem, index) => (
+                  <ReviewCard key={index} reviews={reviewItem}/>
+                ))
+              }
+              </div>
           </div>
           {/* <PlanTrip /> */}
         </div>
       </section>
-      <div className="book-banner">
-        <div className="book-banner__overlay"></div>
-        <div className="container">
-          <div className="text-content">
-            <h2>Book a car by getting in touch with us</h2>
-            <span>
-              <i className="fa-solid fa-phone"></i>
-              <h3>(123) 456-7869</h3>
-            </span>
-          </div>
-        </div>
-      </div>
+      <Banner />
       <Footer />
     </>
   );

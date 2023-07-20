@@ -1,0 +1,59 @@
+:root{
+  --primaryColor: #ffffff;
+  --secondaryColor: #000000;
+  --textColor: #000000;
+  --greyColor: #9a9a9a;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+}
+
+.modelsSection{
+  .container{
+    margin: 0 auto!important;
+    max-width: 133rem!important;
+    padding: 0 2.5rem!important;
+
+    .modelsDiv{
+      grid-gap: 3rem;
+      align-items: center;
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      margin: 0 auto;
+      padding: 10rem 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .container .modelsDiv {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 601px - 768px) */
+  @media only screen and (min-width: 601px) and (max-width: 768px) {
+    .container .modelsDiv {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 769px - 992px) */
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    .container .modelsDiv {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 993px - 1200px) */
+  @media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .container .modelsDiv {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+
+}

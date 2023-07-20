@@ -3,5 +3,19 @@
   "Vehicle" : "所有車輛",
   "Testimonials": "使用者心得",
   "Sales" : "業務人員",
-  "Contact": "聯絡我們"
+  "Contact": "聯絡我們",
+  "search":{
+    "title": "你在找哪款車輛？",
+    "type": "類型",
+    "year": "年份",
+    "model": "型號",
+    "price": "價格",
+    "search": "搜索"
+  },
+  "trending": {
+    "title": "在您附近熱門",
+    "carTitle": "二手",
+    "miles": "英里",
+    "seller": "最佳賣家"
+  }
 }

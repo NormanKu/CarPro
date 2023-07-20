@@ -1,46 +1,48 @@
 import Footer from "../components/Footer";
+import { useTranslation } from "react-i18next";
+import aboutMain from "../assets/about/aboutMain.jpg";
+import "../stylesheets/Pages/About/About.css";
+
 function About() {
+  // Invoke useTranslation and destructure `t` for translation
+  const { t } = useTranslation();
+
   return (
     <>
-      <section className="about-page">
+      <section className="about">
         {/* <HeroPages name="About" /> */}
         <div className="container">
-          <div className="about-main">
-            {/* <img
-              className="about-main__img"
-              src={AboutMain}
-              alt="car-renting"
-            /> */}
-            <div className="about-main__text">
-              <h3>About Company</h3>
-              <h2>You start the engine and your adventure begins</h2>
-              <p>
-                Certain but she but shyness why cottage. Guy the put instrument
-                sir entreaties affronting. Pretended exquisite see cordially the
-                you. Weeks quiet do vexed or whose. Motionless if no to
-                affronting imprudence no precaution. My indulged as disposal
-                strongly attended.
+          <div className="aboutMain">
+            <img
+              className="aboutMainImg"
+              src={aboutMain}
+              alt="carRenting"
+            />
+            <div className="aboutContainer">
+              <h3>{t("about.title")}</h3>
+              <h2>{t("about.slogan")}</h2>
+              <p>  {t("about.passage")}
               </p>
-              <div className="about-main__text__icons">
-                <div className="about-main__text__icons__box">
+              <div className="aboutMainTextIcons">
+                <div className="aboutMainTextIconsBox">
                   {/* <img src={Box1} alt="car-icon" /> */}
                   <span>
                     <h4>20</h4>
-                    <p>Car Types</p>
+                    <p>{t("about.type")}</p>
                   </span>
                 </div>
                 <div className="about-main__text__icons__box">
                   {/* <img src={Box2} alt="car-icon" /> */}
                   <span>
                     <h4>85</h4>
-                    <p>Rental Outlets</p>
+                    <p>{t("about.spot")}</p>
                   </span>
                 </div>
                 <div className="about-main__text__icons__box">
                   {/* <img src={Box3} alt="car-icon" className="last-fk" /> */}
                   <span>
                     <h4>75</h4>
-                    <p>Repair Shop</p>
+                    <p>{t("repair")}</p>
                   </span>
                 </div>
               </div>
@@ -49,18 +51,7 @@ function About() {
           {/* <PlanTrip /> */}
         </div>
       </section>
-      <div className="book-banner">
-        <div className="book-banner__overlay"></div>
-        <div className="container">
-          <div className="text-content">
-            <h2>Book a car by getting in touch with us</h2>
-            <span>
-              <i className="fa-solid fa-phone"></i>
-              <h3>(123) 456-7869</h3>
-            </span>
-          </div>
-        </div>
-      </div>
+      {/* <Banner /> */}
       <Footer />
     </>
   );

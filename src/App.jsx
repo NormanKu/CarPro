@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import About from './Pages/About';
 import Vehicle from './Pages/Vehicle';
 import Testimonials from './Pages/Testimonials';
-import Sales from './Pages/Sales';
+import Teams from './Pages/Teams';
 import Contact from './Pages/Contact';
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
@@ -26,7 +26,7 @@ const App = () => {
       <Route path='/about' element={<About />} />
       <Route path='/vehicle' element={<Vehicle />}/>
       <Route path='/testimonials' element={<Testimonials />} />
-      <Route path='/sales' element={<Sales />} />
+      <Route path='/teams' element={<Teams />} />
       <Route path='/contact' element={<Contact />} />
       </Routes>
 

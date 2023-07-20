@@ -9,17 +9,22 @@ import "../stylesheets/App.css";
 import { useTranslation } from "react-i18next";
 
 function Navbar() {
-  // Invoke useTranslation and destructure `t` and `i18n` for translation
+  // Use the useTranslation hook to get translation function `t` and instance `i18n`
   const { t, i18n } = useTranslation();
 
-  // Initialize the selectedLanguage state with default value 'en'
+  // Maintain a state for selected language, defaulted to 'en'
   const [selectedLanguage, setSelectedLanguage] = useState("en");
 
-  // Statement to hold the state of the navbar
+  // Maintain states for Navbar's display, defaulted to 'navbar'
   const [navbar, setNavbar] = useState("navbar");
+
+  // Maintain states for Link's display, defaulted to false
   const [link, setLink] = useState(false);
 
-  // Array of menu items
+  // Maintain states for language menu's display, defaulted to 'langMenu'
+  const [langMenu, setLangMenu] = useState("langMenu");
+
+  // Define menu items array
   const menuItems = [
     {
       name: "About",
@@ -34,8 +39,8 @@ function Navbar() {
       path: "/testimonials",
     },
     {
-      name: "Sales",
-      path: "/sales",
+      name: "Teams",
+      path: "/teams",
     },
     {
       name: "Contact",
@@ -43,7 +48,7 @@ function Navbar() {
     },
   ];
 
-  // Array of language options
+  // Define language options array
   const lang = [
     {
       name: "繁中",
@@ -59,31 +64,40 @@ function Navbar() {
     },
   ];
 
+  // Function to change the language
   const changeLanguage = (lng) => {
-    // Sets the selected language
+    // Update selected language state
     setSelectedLanguage(lng);
-    // Changes the language translation
+    // Change the language in the i18n instance
     i18n.changeLanguage(lng);
   };
 
+  // Function to toggle link state
   const linkPage = () => {
     setLink(!link);
   };
 
+  // Function to show the navbar
   const showNavbar = () => {
     setNavbar("navbar showNavbar");
   };
 
+  // Function to hide the navbar
   const removeNavbar = () => {
     setNavbar("navbar");
   };
 
-  // const [header, setHeader] = useState('header');
-  // const addBackground = () => {
-  //   if( window.scrollY >= 20){
-  //     setHeader('header addBackground');
-  // };
+  // Function to show the language menu
+  const showLangMenu = () => {
+    setLangMenu("langMenu showLangMenu");
+  };
 
+  // Function to hide the language menu
+  const removeLangMenu = () => {
+    setLangMenu("langMenu");
+  };
+
+  // Render the component
   return (
     <>
       <div className="header">
@@ -109,7 +123,7 @@ function Navbar() {
           <Button variant="secondary" className="text">
             Sign Up
           </Button>
-          <div id="langMenu">
+          <div className={langMenu}>
             <ul className="lang">
               {lang.map((item) => (
                 <li
@@ -128,8 +142,9 @@ function Navbar() {
                 </li>
               ))}
             </ul>
+            <IoIosCloseCircle className="icon closeIcon" onClick={removeLangMenu} />
           </div>
-          <i className="fa-solid fa-globe fa-xl"></i>
+          <a onClick={showLangMenu}><i className="fa-solid fa-globe fa-xl" ></i></a>
           <TbGridDots className="icon toggleNavbarIcon" onClick={showNavbar} />
         </div>
       </div>

@@ -3,5 +3,27 @@
   "Vehicle" : "Vehicle",
   "Testimonials": "Testimonials",
   "Sales" : "Sales",
-  "Contact": "Contact"
+  "Contact": "Contact",
+  "search":{
+    "title" :"Which vehicle you are looking for?",
+    "type" : "Type",
+    "year" : "Year",
+    "model" : "Model",
+    "price" : "Price",
+    "search" : "Search"
+  },
+  "trending":{
+    "title" : "Trending Near You",
+    "carTitle" : "Used",
+    "miles" : "Miles",
+    "seller" : "Best Seller"
+  },
+  "about":{
+    "title":"About Company",
+    "slogan":"Ignite your engine, let your adventure with CarPro begin.",
+    "passage":"  In certainty yet with a touch of shyness, she chose the cottage.The man, an instrument of sorts, stood unfazed despite causing disquiet. Their bond was a spectacle, enduring through tranquil weeks. No heedless impulsiveness, no need for caution. She indulged in the cottage, echoing the steadfast and focused services that CarPro provides.",
+    "type": "Car Types",
+    "spot": "Rental/Buy Outlets",
+    "repair": "Repair Outlets"
+  }
 }

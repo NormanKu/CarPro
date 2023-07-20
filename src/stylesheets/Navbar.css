@@ -19,12 +19,40 @@
 .header .logoDiv .logo {
   width: 80px;
 }
+.header .langMenu {
+  position: absolute;
+  background: var(--primaryColor);
+  border: rgb(237, 237, 237) 1px solid;
+  width: 80%;
+  font-weight: 800;
+  top: -100rem;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+  text-align: center;
+  padding: 4rem;
+  transition: 0.3s ease;
+  z-index: 2000;
+}
+.header .langMenu .lang {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+}
+.header .langMenu .lang a {
+  text-decoration: none;
+}
 @media screen and (max-width: 768px) {
   .header .navbar {
     position: absolute;
     background: var(--primaryColor);
     border: rgb(237, 237, 237) 1px solid;
     width: 80%;
+    font-weight: 800;
     top: -100rem;
     right: 50%;
     left: 50%;
@@ -76,7 +104,7 @@
   }
 }
 .header .signUp {
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .header .signUp .text {
   padding: 3px 10px;
@@ -95,6 +123,10 @@
   font-size: 25px;
 }
 .header .showNavbar {
+  top: 10rem;
+  transition: 0.5s ease;
+}
+.header .showLangMenu {
   top: 10rem;
   transition: 0.5s ease;
 }

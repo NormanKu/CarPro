@@ -70,8 +70,8 @@
   position: fixed;
   font-size: 2.5rem;
   color: white;
-  background-color: orange;
-  border: 3px solid white;
+  background-color: rgba(0, 0, 0, 0.506);
+  border-radius: 50%;
   width: 2rem;
   height: 2rem;
   bottom: 2rem;
@@ -110,7 +110,7 @@
       }
 
       .homeImage{
-        max-width: 85%;
+        max-width: 80%;
       }
     }
   }
@@ -140,7 +140,7 @@
 
 @media screen and (min-width: 996px) {
   .home{
-    padding-top: 12rem;
+    padding-top: 5rem;
     .secContainer{
       gap: 3rem;
       .homeText{
