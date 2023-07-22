@@ -1,5 +1,4 @@
 import React from "react";
-import "../stylesheets/Sellers.css";
 import sellerImage1 from "../assets/images/sellerImage1.jpg";
 
 const Sellers = () => {

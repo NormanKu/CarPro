@@ -1,7 +1,6 @@
 import Footer from "../components/Footer";
 import { useTranslation } from "react-i18next";
 import aboutMain from "../assets/about/aboutMain.jpg";
-import "../stylesheets/Pages/About/About.css";
 
 function About() {
   // Invoke useTranslation and destructure `t` for translation

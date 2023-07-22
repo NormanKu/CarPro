@@ -1,4 +1,3 @@
-import "../stylesheets/Footer.css";
 
 const Footer = () => {
   return (
@@ -8,80 +7,47 @@ const Footer = () => {
           {/* Single grid1 */}
           <div className="singleGrid">
             <span className="footerTitle">
-              About
+              Car <p>Pro</p>
             </span>
             <ul className="footerUl grid">
-              <li className="footerLi">
-                How it works
-              </li>
-              <li className="footerLi">
-                Careers
-              </li>
-              <li className="footerLi">
-                Affliates
-              </li>
-              <li className="footerLi">
-                Media
-              </li>
+              <li className="footerLi">How it works</li>
+              <li className="footerLi">Careers</li>
+              <li className="footerLi">Affliates</li>
+              <li className="footerLi">Media</li>
             </ul>
           </div>
           {/* Single grid2 */}
           <div className="singleGrid">
-            <span className="footerTitle">
-             Become Seller
-            </span>
+            <span className="footerTitle">Company</span>
             <ul className="footerUl grid">
-              <li className="footerLi">
-                Add Vehicles
-              </li>
-              <li className="footerLi">
-                Resourcce center
-              </li>
-              <li className="footerLi">
-                Bonds
-              </li>
-              <li className="footerLi">
-                Release Dates
-              </li>
+              <li className="footerLi">New York</li>
+              <li className="footerLi">Taipei</li>
+              <li className="footerLi">Tokyo</li>
             </ul>
           </div>
           {/* Single grid3 */}
           <div className="singleGrid">
-            <span className="footerTitle">
-              Community
-            </span>
+            <span className="footerTitle">WORKING HOURS</span>
             <ul className="footerUl grid">
-              <li className="footerLi">
-                Recommendations
-              </li>
-              <li className="footerLi">
-                Gift Cards
-              </li>
-              <li className="footerLi">
-                Top Ups
-              </li>
-              <li className="footerLi">
-                Selling
-              </li>
+              <li className="footerLi">Mon - Fri: 9:00AM - 9:00PM</li>
+              <li className="footerLi">Sat: 9:00AM - 19:00PM </li>
+              <li className="footerLi">Sun: Closed</li>
             </ul>
           </div>
           {/* Single grid4 */}
           <div className="singleGrid">
-            <span className="footerTitle">
-              Booking Support
-            </span>
+            <span className="footerTitle">Subscription</span>
             <ul className="footerUl grid">
               <li className="footerLi">
-                Updates for Covid-19
+                Subscribe your Email address for latest news & updates.
+              </li>
+              <li className="footerLi"></li>
+              <li className="footerLi">
+                {" "}
+                <input type="email" placeholder="Enter Email Address" />
               </li>
               <li className="footerLi">
-                Help center
-              </li>
-              <li className="footerLi">
-                Garages
-              </li>
-              <li className="footerLi">
-                Trust & Safety
+                <button className="submit-email">Submit</button>
               </li>
             </ul>
           </div>
@@ -89,11 +55,11 @@ const Footer = () => {
 
         {/* Footer Lower section */}
         <div className="lowerSection grid">
-         copyright {new Date().getFullYear()}. allRightsReserved
+          copyright {new Date().getFullYear()}. allRightsReserved
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

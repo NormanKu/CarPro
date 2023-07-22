@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import SaleCard from "../components/SaleCard";
 import Person1 from "../assets/team/person1.jpg";
-import "../stylesheets/Pages/Teams/Teams.css";
+import Banner from "../components/Banner";
 
 function Teams() {
   const teamPpl = [
@@ -27,7 +27,7 @@ function Teams() {
 
           </div>
         </div>
-        {/* <Banner /> */}
+        <Banner />
         <Footer />
       </section>
     </>

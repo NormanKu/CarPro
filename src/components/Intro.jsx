@@ -1,9 +1,9 @@
-import "../stylesheets/Home.css";
 import { Button } from 'react-bootstrap';
 import homeImage from '../assets/images/homeImage.png'
 import { useEffect, useState } from 'react';
 
 const Intro = () => {
+
   const [goUp, setGoUp] = useState(false);
 
   const scrollToTop = () => {
@@ -41,7 +41,6 @@ const Intro = () => {
             <Button variant="secondary" className="btn primaryBtn">Test Drive</Button>
           </div>
         </div>
-
         <div className="homeImage">
           <img src={homeImage} alt="Home Image" />
         </div>

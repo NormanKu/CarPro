@@ -1,11 +1,9 @@
 import { useState } from "react";
-import "../stylesheets/Navbar.css";
 import { IoIosCloseCircle } from "react-icons/io";
 import { TbGridDots } from "react-icons/tb";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
-import "../stylesheets/App.css";
 import { useTranslation } from "react-i18next";
 
 function Navbar() {

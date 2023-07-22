@@ -1,10 +1,11 @@
+
 const Banner = () => {
   return (
     <>
-      <div className="book-banner">
-        <div className="book-banner__overlay"></div>
+      <section className="bookBanner">
+        <div className="bookBanner__overlay"></div>
         <div className="container">
-          <div className="text-content">
+          <div className="textContent">
             <h2>Book a car by getting in touch with us</h2>
             <span>
               <i className="fa-solid fa-phone"></i>
@@ -12,7 +13,7 @@ const Banner = () => {
             </span>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

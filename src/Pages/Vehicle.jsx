@@ -2,7 +2,6 @@ import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import CarCard from "../components/CarCard";
 import Car1 from "../assets/images/car1.jpg";
-import "../stylesheets/Pages/Vehicle/Vehicle.css";
 
 function Vehicle() {
   const car = [

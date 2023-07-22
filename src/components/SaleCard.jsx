@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import "../stylesheets/components/salecard.css";
 
 function SaleCard({ sales }) {
   return (

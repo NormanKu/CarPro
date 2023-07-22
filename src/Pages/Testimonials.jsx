@@ -1,9 +1,17 @@
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import ReviewCard from "../components/ReviewCard";
-import "../stylesheets/Pages/testimonials/Testimonials.css";
 import Car1 from "../assets/images/car1.jpg";
 import person1 from "../assets/images/user1.png";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+
 function Testimonials() {
   const reviews = [
     {
@@ -14,7 +22,7 @@ function Testimonials() {
       userImg: person1,
       user: "Jakline Nelson",
       title: "Chief Editor",
-      rating: "4.84"
+      rating: 4.84
     },
     {
       car: Car1,
@@ -24,7 +32,7 @@ function Testimonials() {
       userImg: person1,
       user: "John Doe",
       title: "Senior Editor",
-      rating: "4.5"
+      rating: 4.5
     },
     {
       car: Car1,
@@ -34,7 +42,7 @@ function Testimonials() {
       userImg: person1,
       user: "Emma Watson",
       title: "Content Writer",
-      rating: "4.6"
+      rating: 4.6
     },
     {
       car: Car1,
@@ -44,7 +52,7 @@ function Testimonials() {
       userImg: person1,
       user: "Robert Downey Jr.",
       title: "Product Analyst",
-      rating: "4.7"
+      rating: 4.7
     },
     {
       car: Car1,
@@ -54,7 +62,7 @@ function Testimonials() {
       userImg: person1,
       user: "Scarlett Johansson",
       title: "Quality Analyst",
-      rating: "4.8"
+      rating: 4.8
     }
   ];
 
@@ -76,13 +84,44 @@ function Testimonials() {
               </p>
 
             </div>
-            <div className="allTestimonials">
+            <Swiper
+              effect={'coverflow'}
+              grabCursor={true}
+              centeredSlides={true}
+              loop={true}
+              slidesPerView={'auto'}
+              coverflowEffect={{
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2.5,
+              }}
+              pagination={{ el: '.swiper-pagination', clickable: true }}
+              navigation={{
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                clickable: true,
+              }}
+              modules={[EffectCoverflow, Pagination, Navigation]}
+              className="swiperContainer"
+            >
               {
                 reviews.map((reviewItem, index) => (
-                  <ReviewCard key={index} reviews={reviewItem}/>
+                  <SwiperSlide key={index}>
+                    <ReviewCard reviews={reviewItem}/>
+                  </SwiperSlide>
                 ))
               }
-              </div>
+              <div className="slider-controler">
+          <div className="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </div>
+          <div className="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div className="swiper-pagination"></div>
+        </div>
+            </Swiper>
           </div>
           {/* <PlanTrip /> */}
         </div>

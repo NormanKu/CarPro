@@ -1,0 +1,19 @@
+
+@forward "../stylesheets/components/_banner.scss";
+@forward "../stylesheets/components/_carcard.scss";
+@forward "../stylesheets/components/_footer.scss";
+@forward "../stylesheets/components/_home.scss";
+@forward "../stylesheets/components/_navbar.scss";
+@forward "../stylesheets/components/_review.scss";
+@forward "../stylesheets/components/_reviewcard.scss";
+@forward "../stylesheets/components/_salecard.scss";
+@forward "../stylesheets/components/_sellers.scss";
+@forward "../stylesheets/components/_trending.scss";
+@forward "../stylesheets/components/_faq.scss";
+@forward "../stylesheets/components/_detail.scss";
+@use "../stylesheets/global";
+@forward "../stylesheets/Pages/About/about";
+
+@forward "../stylesheets/Pages/Teams/teams";
+@forward "../stylesheets/Pages/testimonials/testimonials";
+@forward "../stylesheets/Pages/Vehicle/vehicle";

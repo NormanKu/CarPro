@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import "../stylesheets/components/reviewcard.css"
 import { AiFillStar } from "react-icons/ai";
 
 function ReviewCard({ reviews }) {
