@@ -25,5 +25,11 @@
     "type": "Car Types",
     "spot": "Rental/Buy Outlets",
     "repair": "Repair Outlets"
+  },
+  "intro":{
+    "homeSpan":"Meet your new car",
+    "model":"Honda Civic Type R",
+    "detail":"More Details",
+    "book":"Test Drive"
   }
 }

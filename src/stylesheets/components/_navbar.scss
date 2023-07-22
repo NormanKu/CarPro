@@ -16,7 +16,7 @@
 
   .langMenu {
     position: absolute;
-    background: var(--primaryColor);
+    background: var(--bs-white);
     border: rgb(237, 237, 237) 1px solid;
     width: 80%;
     font-weight: 800;
@@ -42,11 +42,10 @@
       }
     }
   }
-
   @media screen and (max-width: 768px) {
       .navbar {
         position: absolute;
-        background: var(--primaryColor);
+        background: var(--bs-white);
         border: rgb(237, 237, 237) 1px solid;
         width: 80%;
         font-weight: 800;
@@ -59,6 +58,10 @@
         padding: 4rem;
         transition: .3s ease;
         z-index: 2000;
+        justify-content: center;
+      }
+      .menu{
+        padding-left: 0;
       }
 
       .closeIcon {
@@ -67,8 +70,8 @@
         right: 50%;
         left: 50%;
         transform: translate(-50%);
-        background: var(--secondaryColor);
-        color: var(--primaryColor);
+        // background: var(--secondaryColor);
+        // color: var(--bs-white);
         border-radius: 50%;
         font-size: 35px;
 
@@ -104,6 +107,8 @@
           }
         }
       }
+
+
     }
 
     .signUp {
@@ -120,8 +125,10 @@
         }
       }
 
+
+
       .toggleNavBarIcon {
-        background: none;
+        background: orange;
         color: var(--primaryColor);
         font-weight: 600;
         font-size: 25px;
@@ -155,6 +162,7 @@
         font-size: 16px;
       }
 
+
       .toggleNavBarIcon{
         font-size: 30px;
       }
@@ -162,7 +170,7 @@
   }
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 769px) {
   .header{
     .navbar{
       .closeIcon{
@@ -199,10 +207,59 @@
       .text{
         padding: 6px 10px;
       }
+      .closeIcon {
+        position:absolute;
+        bottom: -15px;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        color: var(--textColor);
+        border-radius: 50%;
+        font-size: 35px;
 
-      .toggleNavBarIcon{
+        &:hover {
+          color: black;
+          background: var(--greyColor);
+        }
+      }
+      .icon.toggleNavbarIcon {
         display: none;
       }
+    }
+  }
+}
+@media screen and (min-width:1400px) {
+  .header{
+    .navbar{
+      .menu{
+        .listItem{
+          margin: 0 .8rem;
+        }
+      }
+    }
+
+    .showLangMenu{
+      left:80rem;
+      width: 15%;
+    }
+    .closeIcon {
+      position:absolute;
+      bottom: -15px;
+      right: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      color: var(--textColor);
+      border-radius: 50%;
+      font-size: 35px;
+
+      &:hover {
+        color: black;
+        background: var(--greyColor);
+      }
+    }
+
+    .icon.toggleNavbarIcon {
+      display: none;
     }
   }
 }
@@ -224,18 +281,27 @@
       .text{
         font-size: 18px;
       }
-    }
-  }
-}
 
-@media screen and (min-width:1400px) {
-  .header{
-    .navbar{
-      .menu{
-        .listItem{
-          margin: 0 .8rem;
+      .showLangMenu{
+        left:59rem;
+        width: 20%;
+      }
+      .closeIcon {
+        position:absolute;
+        bottom: -15px;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        color: var(--textColor);
+        border-radius: 50%;
+        font-size: 35px;
+
+        &:hover {
+          color: black;
+          background: var(--greyColor);
         }
       }
+
     }
   }
 }

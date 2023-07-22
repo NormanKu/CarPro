@@ -7,13 +7,27 @@ const Footer = () => {
           {/* Single grid1 */}
           <div className="singleGrid">
             <span className="footerTitle">
-              Car <p>Pro</p>
+              Car Pro
             </span>
             <ul className="footerUl grid">
-              <li className="footerLi">How it works</li>
-              <li className="footerLi">Careers</li>
-              <li className="footerLi">Affliates</li>
-              <li className="footerLi">Media</li>
+              <li className="footerLi"> <a href="tel:123456789">
+                  <i className="fa-solid fa-phone"></i> &nbsp; (123) -456-789
+                </a></li>
+              <li className="footerLi"><a
+                  href="mailto:
+                carrental@gmail.com"
+                >
+                  <i className="fa-solid fa-envelope"></i>
+                  &nbsp; carrental@gmail.com
+                </a></li>
+              <li className="footerLi"><a
+                  style={{ fontSize: "14px" }}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://xpeedstudio.com/"
+                >
+                  Design by XpeedStudio
+                </a></li>
             </ul>
           </div>
           {/* Single grid2 */}

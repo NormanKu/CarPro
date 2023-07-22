@@ -16,10 +16,10 @@ function Detail() {
 
   return (
     <>
-      <section className="pick-section">
+      <section className="pickSection" id="detail">
         <div className="container">
-          <div className="pick-container">
-            <div className="pick-container__title">
+          <div className="pickContainer">
+            <div className="pickContainer__title">
               <h3>Vehicle Models</h3>
               <h2>Our rental fleet</h2>
               <p>
@@ -27,9 +27,9 @@ function Detail() {
                 next adventure or business trip
               </p>
             </div>
-            <div className="pick-container__car-content">
+            <div className="pickContainerCarContent">
               {/* pick car */}
-              <div className="pick-box">
+              <div className="pickBox">
                 <button
                   className={`${coloringButton("btn1")}`}
                   onClick={() => {

@@ -1,4 +1,3 @@
-import React from "react";
 import sellerImage1 from "../assets/images/sellerImage1.jpg";
 
 const Sellers = () => {

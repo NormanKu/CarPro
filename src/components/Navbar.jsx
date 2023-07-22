@@ -140,9 +140,14 @@ function Navbar() {
                 </li>
               ))}
             </ul>
-            <IoIosCloseCircle className="icon closeIcon" onClick={removeLangMenu} />
+            <IoIosCloseCircle
+              className="icon closeIcon"
+              onClick={removeLangMenu}
+            />
           </div>
-          <a onClick={showLangMenu}><i className="fa-solid fa-globe fa-xl" ></i></a>
+          <a onClick={showLangMenu}>
+            <i className="fa-solid fa-globe fa-xl"></i>
+          </a>
           <TbGridDots className="icon toggleNavbarIcon" onClick={showNavbar} />
         </div>
       </div>

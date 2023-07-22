@@ -9,7 +9,7 @@ function Home() {
   return (
     <>
     <Intro />
-<Detail />
+  <Detail />
       <Sellers />
       <Faq />
       <Footer />

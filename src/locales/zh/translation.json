@@ -17,5 +17,11 @@
     "carTitle": "二手",
     "miles": "英里",
     "seller": "最佳賣家"
+  },
+  "intro":{
+    "homeSpan":"找尋你要的新車",
+    "model":"Honda Civic Type R",
+    "detail":"更多資訊",
+    "book":"預約試乘"
   }
 }

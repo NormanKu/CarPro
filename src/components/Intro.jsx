@@ -1,14 +1,20 @@
 import { Button } from 'react-bootstrap';
 import homeImage from '../assets/images/homeImage.png'
 import { useEffect, useState } from 'react';
+import { useTranslation } from "react-i18next";
+
 
 const Intro = () => {
-
+  const { t } = useTranslation();
   const [goUp, setGoUp] = useState(false);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  const handleMoreDetailsClick = () => {
+    window.location = '#detail';
+  }
 
   useEffect(() => {
     const onPageScroll = () => {
@@ -31,14 +37,14 @@ const Intro = () => {
 
         <div className="homeText">
           <span className="homeSpan">
-            Meet your new car
+           {t("intro.homeSpan")}
           </span>
           <h1 className="homeTitle">
-            Honda Civic Type R
+            {t("intro.model")}
           </h1>
           <div className="btns flex">
-            <button className="btn">More Details</button>
-            <Button variant="secondary" className="btn primaryBtn">Test Drive</Button>
+            <button className="btn" onClick={handleMoreDetailsClick}>{t("intro.detail")}</button>
+            <Button variant="secondary" className="btn primaryBtn">{t("intro.book")}</Button>
           </div>
         </div>
         <div className="homeImage">
