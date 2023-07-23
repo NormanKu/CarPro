@@ -5,7 +5,7 @@ function CarBox({ data, carID }) {
   return (
     <>
       {data[carID].map((car, id) => (
-        <div key={id} className="box-cars">
+        <div key={id} className="boxCars">
           {/* car */}
           <div className="pickCar">
             {carLoad && <span className="loader"></span>}
@@ -21,38 +21,38 @@ function CarBox({ data, carID }) {
             <div className="pickDescription__price">
               <span>${car.price}</span>/ rent per day
             </div>
-            <div className="pickDescription__table">
-              <div className="pickDescription__table__col">
+            <div className="pickDescriptionTable">
+              <div className="pickDescriptionTableCol">
                 <span>Model</span>
                 <span>{car.model}</span>
               </div>
 
-              <div className="pickDescription__table__col">
+              <div className="pickDescriptionTableCol">
                 <span>Mark</span>
                 <span>{car.mark}</span>
               </div>
 
-              <div className="pickDescription__table__col">
+              <div className="pickDescriptionTableCol">
                 <span>Year</span>
                 <span>{car.year}</span>
               </div>
 
-              <div className="pickDescription__table__col">
+              <div className="pickDescriptionTableCol">
                 <span>Doors</span>
                 <span>{car.doors}</span>
               </div>
 
-              <div className="pickDescription__table__col">
+              <div className="pickDescriptionTableCol">
                 <span>AC</span>
                 <span>{car.air}</span>
               </div>
 
-              <div className="pickDescription__table__col">
+              <div className="pickDescriptionTableCol">
                 <span>Transmission</span>
                 <span>{car.transmission}</span>
               </div>
 
-              <div className="pickDescription__table__col">
+              <div className="pickDescriptionTableCol">
                 <span>Fuel</span>
                 <span>{car.fuel}</span>
               </div>

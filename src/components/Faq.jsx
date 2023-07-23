@@ -17,10 +17,10 @@ function Faq() {
 
   return (
     <>
-      <section className="faq-section">
+      <section className="faqSection">
         <div className="container">
-          <div className="faq-content">
-            <div className="faq-content__title">
+          <div className="faqContent">
+            <div className="faqContentTitle">
               <h5>FAQ</h5>
               <h2>Frequently Asked Questions</h2>
               <p>
@@ -29,20 +29,24 @@ function Faq() {
               </p>
             </div>
 
-            <div className="all-questions">
-              <div className="faq-box">
+            {/* alltheQuestions */}
+            <div className="allQuestions">
+              {/* faqBox */}
+              <div className="faqBox">
+                {/* faqQuestion */}
                 <div
                   id="q1"
                   onClick={() => openQ("q1")}
-                  className={`faq-box__question  ${getClassQuestion("q1")}`}
+                  className={`faqBoxQuestion  ${getClassQuestion("q1")}`}
                 >
                   <p>1. What is special about comparing rental car deals?</p>
                   <i className="fa-solid fa-angle-down"></i>
                 </div>
+                {/* faqAnswer */}
                 <div
                   id="q1"
                   onClick={() => openQ("q1")}
-                  className={`faq-box__answer ${getClassAnswer("q1")}`}
+                  className={`faqBoxAnswer ${getClassAnswer("q1")}`}
                 >
                   Comparing rental car deals is important as it helps find the
                   best deal that fits your budget and requirements, ensuring you
@@ -53,11 +57,12 @@ function Faq() {
                   different rental companies.
                 </div>
               </div>
-              <div className="faq-box">
+              {/* faqBox */}
+              <div className="faqBox">
                 <div
                   id="q2"
                   onClick={() => openQ("q2")}
-                  className={`faq-box__question ${getClassQuestion("q2")}`}
+                  className={`faqBoxQuestion ${getClassQuestion("q2")}`}
                 >
                   <p>2. How do I find the car rental deals?</p>
                   <i className="fa-solid fa-angle-down"></i>
@@ -65,7 +70,7 @@ function Faq() {
                 <div
                   id="q2"
                   onClick={() => openQ("q2")}
-                  className={`faq-box__answer ${getClassAnswer("q2")}`}
+                  className={`faqBoxAnswer ${getClassAnswer("q2")}`}
                 >
                   You can find car rental deals by researching online and
                   comparing prices from different rental companies. Websites
@@ -76,11 +81,12 @@ function Faq() {
                   deals or promotions.
                 </div>
               </div>
-              <div className="faq-box">
+              {/* faqBox */}
+              <div className="faqBox">
                 <div
                   id="q3"
                   onClick={() => openQ("q3")}
-                  className={`faq-box__question ${getClassQuestion("q3")}`}
+                  className={`faqBoxQuestion ${getClassQuestion("q3")}`}
                 >
                   <p>3. How do I find such low rental car prices?</p>
                   <i className="fa-solid fa-angle-down"></i>
@@ -88,7 +94,7 @@ function Faq() {
                 <div
                   id="q3"
                   onClick={() => openQ("q3")}
-                  className={`faq-box__answer ${getClassAnswer("q3")}`}
+                  className={`faqBoxAnswer ${getClassAnswer("q3")}`}
                 >
                   Book in advance: Booking your rental car ahead of time can
                   often result in lower prices. Compare prices from multiple

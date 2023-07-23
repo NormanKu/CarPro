@@ -1,18 +1,19 @@
 @use "../global/global" as *;
 
-.faq-section {
+.faqSection {
   background-image: url("../../assets/images/faq.jpg");
   padding: 10rem 0;
+  background-position:center;
   background-size: auto;
   background-repeat: no-repeat;
 }
 
-.faq-content {
+.faqContent {
   display: flex;
   flex-direction: column;
   color: var(--textColor);
 
-  &__title {
+  &Title {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -21,7 +22,7 @@
     line-height: 1.5;
 
     h5 {
-      font-size: 6rem;
+      font-size: 5rem;
       font-weight: 800;
     }
 
@@ -36,60 +37,61 @@
       color:grey;
     }
   }
-}
 
-.all-questions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.faq-box {
-  display: flex;
-  flex-direction: column;
-  color: var(--textColor);
-  background-color: white;
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
-
-  width: 60rem;
-  cursor: pointer;
-
-  @media (max-width: 850px) {
-    width: 100%;
-  }
-
-  &__question {
+  .allQuestions {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 10%);
-    padding: 1.8rem 4.5rem;
-    transition: 0.15s ease;
+    margin-top: 1rem;
+    gap: 1.4rem;
+    .faqBox {
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      color: var(--textColor);
+      background-color: white;
+      box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+      width: 100%;
+      cursor: pointer;
 
-    p {
-      font-size: 1.8rem;
-      font-weight: 500;
-    }
+      @media (max-width: 850px) {
+        width: 100%;
+      }
 
-    i {
-      font-size: 2rem;
-    }
-  }
+      &Question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 10%);
+        padding: 1.8rem 4.5rem;
+        transition: 0.15s ease;
+        border-radius: 50px;
 
-  &__answer {
-    font-size: 1.6rem;
-    color: grey;
-    line-height: 1.7;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.4s ease;
-    padding: 0 4.5rem;
-  }
-}
+
+        p {
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 2.5rem;
+        }
+
+        i {
+          font-size: 2rem;
+        }
+      }
+
+      &Answer {
+        font-size: 1.6rem;
+        color: grey;
+        line-height: 1.7;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.4s ease;
+        padding: 0 4.5rem;
+      }
+
 
 .active-answer {
-  max-height: 20rem;
+  max-height: 100%;
   padding: 2.8rem 4.5rem;
   transition: 0.4s ease;
 
@@ -103,7 +105,13 @@
 }
 
 .active-question {
-  background-color: orange;
+  background-color: rgb(0, 0, 0);
   color: white;
-  box-shadow: 0 10px 15px 0 rgb(255 83 48 / 35%);
+  box-shadow: 0 10px 15px 0 rgb(161, 161, 161);
+  p{
+    color: white;
+  }
+}
+    }
+  }
 }

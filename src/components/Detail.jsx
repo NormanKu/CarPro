@@ -19,7 +19,7 @@ function Detail() {
       <section className="pickSection" id="detail">
         <div className="container">
           <div className="pickContainer">
-            <div className="pickContainer__title">
+            <div className="pickContainerTitle">
               <h3>Vehicle Models</h3>
               <h2>Our rental fleet</h2>
               <p>
