@@ -10,6 +10,7 @@ import Contact from './Pages/Contact';
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
+
 const App = () => {
   const { i18n } = useTranslation();
   const [language, setLanguage] = useState(i18n.language || "en");  // 使用 i18n.language 初始化語言狀態

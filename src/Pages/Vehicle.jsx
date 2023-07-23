@@ -41,7 +41,6 @@ function Vehicle() {
   return (
         <>
       <section className="modelsSection">
-        {/* <HeroPages name="Vehicle Models" /> */}
         <div className="container">
           <div className="modelsDiv">
 

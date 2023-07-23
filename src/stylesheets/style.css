@@ -867,6 +867,7 @@ img {
   flex-direction: column;
   width: 21rem;
   background: rgb(255, 255, 255);
+  margin: 0 auto;
 }
 .singleReview .imgDiv {
   height: 200px;
@@ -937,32 +938,49 @@ img {
 }
 
 .teamContainerBox {
-  background-color: #fff;
-  box-shadow: 0 20px 10px 0 rgba(0, 0, 0, 0.08);
-  width: 20rem;
-  border-radius: 10px;
+  width: 20em;
+  height: 96%;
+  background-color: white;
+  margin: 10px 10px 10px 10px;
+  border-radius: 2em;
+  box-shadow: 0 1px 1em rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .teamContainerBox .teamContainerBoxImgDiv {
-  width: 100%;
-  height: auto;
-  background-color: #f6f6f6;
-  border-radius: 10px 10px 0 0;
+  margin: 4rem 0;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 5px solid #777;
+  padding: 3px;
 }
 .teamContainerBox .teamContainerBoxImgDiv img {
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.teamContainerBox .temaContainerBoxDescr {
-  color: #010103;
-  padding: 3rem;
+.teamContainerBox .teamContainerBoxDescr {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.teamContainerBox .temaContainerBoxDescr h3 {
-  font-size: 2.2rem;
-}
-.teamContainerBox .temaContainerBoxDescr p {
-  color: #777;
-  font-size: 1.6rem;
+.teamContainerBox .teamContainerBoxDescrTitle {
+  font-size: 1.5rem;
   font-weight: 500;
+  position: relative;
+  top: 0.2em;
+}
+.teamContainerBox .teamContainerBoxDescrName {
+  color: blue;
+}
+.teamContainerBox .teamContainerBoxDescrJob {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1em 0;
 }
 
 .sellers {
@@ -1501,40 +1519,53 @@ img {
 }
 
 .teamPage .container .teamContainer {
-  grid-gap: 4rem;
-  align-items: center;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  margin: 0 auto;
-  padding: 10rem 2rem;
-  text-align: center;
   width: 100%;
+  height: 60em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teamPage .container .teamContainer .swiper {
+  height: 60%;
+}
+.teamPage .container .teamContainer .swipper-wrapper {
+  height: 95%;
+}
+.teamPage .container .teamContainer .swiper-slide {
+  width: 30%;
+}
+.teamPage .container .teamContainer .swiper-slide:not(.swiper-slide-active) {
+  filter: blur(3px);
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .teamPage .container .teamContainer {
-    grid-template-columns: 1fr;
+  .teamPage .container .teamContainer .swiper-slide {
+    width: 100%;
   }
 }
 /* Small devices (portrait tablets and large phones, 601px - 768px) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-  .teamPage .container .teamContainer {
-    grid-template-columns: 1fr 1fr;
+  .teamPage .container .teamContainer .swiper-slide {
+    width: 50%;
   }
 }
 /* Medium devices (landscape tablets, 769px - 992px) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-  .teamPage .container .teamContainer {
-    grid-template-columns: 1fr 1fr 1fr;
+  .teamPage .container .teamContainer .swiper-slide {
+    width: 33.33%;
   }
 }
 /* Large devices (laptops/desktops, 993px - 1200px) */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .teamPage .container .teamContainer {
-    grid-template-columns: 1fr 1fr;
+  .teamPage .container .teamContainer .swiper-slide {
+    width: 50%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1201px and up) */
+@media only screen and (min-width: 1201px) {
+  .teamPage .container .teamContainer .swiper-slide {
+    width: 30%;
   }
 }
 .testimonialsPage {
@@ -1550,6 +1581,9 @@ img {
 .testimonialsPage .container .testimonialsContent {
   display: flex;
   flex-direction: column;
+}
+.testimonialsPage .container .testimonialsContent .swiper .swiper-slide {
+  flex-shrink: 1;
 }
 .testimonialsPage .container .testimonialsContent .testimonialsContentTitle {
   margin: 0 auto 5rem;

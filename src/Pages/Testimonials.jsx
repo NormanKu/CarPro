@@ -93,8 +93,8 @@ function Testimonials() {
               coverflowEffect={{
                 rotate: 0,
                 stretch: 0,
-                depth: 100,
-                modifier: 2.5,
+                depth: 10,
+                modifier: 300,
               }}
               pagination={{ el: '.swiper-pagination', clickable: true }}
               navigation={{

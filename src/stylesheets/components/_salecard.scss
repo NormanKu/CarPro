@@ -1,35 +1,71 @@
 @use "../global/global" as *;
 
 .teamContainerBox{
-  background-color: #fff;
-    box-shadow: 0 20px 10px 0 rgba(0,0,0,.08);
-    width: 20rem;
-    border-radius: 10px;
+  width: 20em;
+  height: 96%;
+  background-color: white;
+  margin: 10px 10px 10px 10px;
+  border-radius: 2em;
+  box-shadow: 0 1px 1em rgba(0,0,0,.2);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  // background-color: #fff;
+  //   box-shadow: 0 20px 10px 0 rgba(0,0,0,.08);
+  //   width: 20rem;
+  //   border-radius: 10px;
 
     .teamContainerBoxImgDiv{
-      width: 100%;
-      height: auto;
-      background-color: #f6f6f6;
-      border-radius: 10px 10px 0 0;
-
+      // width: 100%;
+      // height: auto;
+      // background-color: #f6f6f6;
+      // border-radius: 10px 10px 0 0;
+      margin:4rem 0;
+      width: 10em;
+      height: 10em;
+      border-radius: 50%;
+      border: 5px solid #777 ;
+      padding: 3px;
       img {
         width: 100%;
-        border-radius: 10px 10px 0 0;
-
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        // border-radius: 10px 10px 0 0;
       }
+
     }
 
-  .temaContainerBoxDescr{
-    color: #010103;
-    padding: 3rem;
+  .teamContainerBoxDescr{
+    // color: #010103;
+    // padding: 3rem;
+    display: flex;
+        align-items: center;
+        flex-direction: column;
 
-    h3 {
-      font-size: 2.2rem;
-  }
-  p {
-    color: #777;
-    font-size: 1.6rem;
-    font-weight: 500;
-}
+        &Title{
+          font-size: 1.5rem;
+          font-weight: 500;
+          position: relative;
+          top:.2em;
+        }
+
+        &Name{
+          color: blue
+        }
+
+        &Job{
+          text-align: center;
+          font-size: 1.2rem;
+          margin: 1em 0;
+        }
+//     h3 {
+//       font-size: 2.2rem;
+//   }
+//   p {
+//     color: #777;
+//     font-size: 1.6rem;
+//     font-weight: 500;
+// }
   }
 }
