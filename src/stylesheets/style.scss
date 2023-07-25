@@ -13,7 +13,8 @@
 @forward "../stylesheets/components/_detail.scss";
 @use "../stylesheets/global";
 @forward "../stylesheets/Pages/About/about";
-
+@forward "../stylesheets/Pages/Signup/signup";
+@forward "../stylesheets/Pages/Login/login";
 @forward "../stylesheets/Pages/Teams/teams";
 @forward "../stylesheets/Pages/testimonials/testimonials";
 @forward "../stylesheets/Pages/Vehicle/vehicle";

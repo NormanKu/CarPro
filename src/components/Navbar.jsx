@@ -109,7 +109,11 @@ function Navbar() {
           <ul className="menu">
             {menuItems.map((item) => (
               <li onClick={removeNavbar} key={item.name} className="listItem">
-                <Link onClick={linkPage} to={item.path} className="link">
+                <Link onClick={() => {
+            linkPage();
+            removeNavbar();
+            removeLangMenu();
+          }}  to={item.path} className="link">
                   {t(item.name)}
                 </Link>
               </li>
@@ -118,9 +122,12 @@ function Navbar() {
           <IoIosCloseCircle className="icon closeIcon" onClick={removeNavbar} />
         </div>
         <div className="signUp flex">
-          <Button variant="secondary" className="text">
-            Sign Up
-          </Button>
+          <Link onClick={linkPage} to="/login">
+            <Button variant="secondary" className="text">
+              Login
+            </Button>
+          </Link>
+
           <div className={langMenu}>
             <ul className="lang">
               {lang.map((item) => (
@@ -133,6 +140,8 @@ function Navbar() {
                     onClick={(e) => {
                       e.preventDefault();
                       changeLanguage(item.lng);
+                      removeNavbar();
+                      removeLangMenu();
                     }}
                   >
                     {t(item.name)}

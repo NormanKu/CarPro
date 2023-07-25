@@ -7,11 +7,17 @@ import Vehicle from './Pages/Vehicle';
 import Testimonials from './Pages/Testimonials';
 import Teams from './Pages/Teams';
 import Contact from './Pages/Contact';
+import Signup from './Pages/Signup';
+import Booking from './Pages/Booking';
+import Login from './Pages/Login';
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { Login as LoginIcon } from "@mui/icons-material";
+import ProtectedRoutes from "./utils/ProtectedRoutes";
 
 
 const App = () => {
+  const user = { login: false}
   const { i18n } = useTranslation();
   const [language, setLanguage] = useState(i18n.language || "en");  // 使用 i18n.language 初始化語言狀態
   const changeLanguage = (lng) => {
@@ -29,6 +35,15 @@ const App = () => {
       <Route path='/testimonials' element={<Testimonials />} />
       <Route path='/teams' element={<Teams />} />
       <Route path='/contact' element={<Contact />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/signup' element={<Signup />} />
+
+      {/* Need to login */}
+      <Route element={<ProtectedRoutes user={user}/>}>
+      <Route path='/booking' element={<Booking />} />
+      </Route>
+
+
       </Routes>
 
     </div>

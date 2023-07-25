@@ -1,31 +1,21 @@
 import Footer from "../components/Footer";
 import SaleCard from "../components/SaleCard";
-import Person1 from "../assets/team/person1.jpg";
 import Banner from "../components/Banner";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow'
+import 'swiper/css/autoplay';
+import { TEAM_DATA } from "../components/data/TeamData";
+import { Pagination, Autoplay } from 'swiper/modules';
+
 
 function Teams() {
-  const teamPpl = [
-    { img: Person1,title:"Salesman", name: "Luke Miller", job: "Salesman" },
-    { img: Person1, title:"Business", name: "Michael Diaz", job: "Business Owner" },
-    { img: Person1, title:"Photographer", name: "Briana Ross", job: "Photographer" },
-    { img: Person1, title:"Car Detailist", name: "Lauren Rivera", job: "Car Detailist" },
-    { img: Person1, title:"Mechanic", name: "Martin Rizz", job: "Mechanic" },
-    { img: Person1, title:"Menager", name: "Caitlyn Hunt", job: "Menager" },
-  ];
 
   return (
     <>
       <section className="teamPage">
         <div className="container">
           <div className="teamContainer">
-            {/* {
-              teamPpl.map((teamItem, index) => (
-                <SaleCard key={index} sales={teamItem}/>
-              ))
-            } */}
             <Swiper
               effect={'coverflow'}
               grabCursor={true}
@@ -38,11 +28,14 @@ function Teams() {
                 modifier: 1,
                 slideShadows: true,
               }}
+              autoplay={{ delay: 2500, disableOnInteraction: false }}
               pagination={true}
+              modules={[ Pagination,Autoplay]}
+
             >
-              {teamPpl.map((teamItem, index) => (
+              {TEAM_DATA.map((teamItem, index) => (
                 <SwiperSlide key={index}>
-                  <SaleCard sales={teamItem} />
+                  <SaleCard teamItem={teamItem} />
                 </SwiperSlide>
               ))}
             </Swiper>

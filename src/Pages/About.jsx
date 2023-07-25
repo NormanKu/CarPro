@@ -1,6 +1,9 @@
 import Footer from "../components/Footer";
 import { useTranslation } from "react-i18next";
 import aboutMain from "../assets/about/aboutMain.jpg";
+import About1 from "../assets/about/about1.png";
+import About2 from "../assets/about/about2.png";
+import About3 from "../assets/about/about3.png";
 
 function About() {
   // Invoke useTranslation and destructure `t` for translation
@@ -9,7 +12,6 @@ function About() {
   return (
     <>
       <section className="about">
-        {/* <HeroPages name="About" /> */}
         <div className="container">
           <div className="aboutMain">
             <img
@@ -24,24 +26,24 @@ function About() {
               </p>
               <div className="aboutMainTextIcons">
                 <div className="aboutMainTextIconsBox">
-                  {/* <img src={Box1} alt="car-icon" /> */}
+                  <img src={About1} alt="car-icon" className="CarIcon" />
                   <span>
                     <h4>20</h4>
                     <p>{t("about.type")}</p>
                   </span>
                 </div>
-                <div className="about-main__text__icons__box">
-                  {/* <img src={Box2} alt="car-icon" /> */}
+                <div className="aboutMainTextIconsBox">
+                  <img src={About2} alt="car-icon" className="CarIcon"/>
                   <span>
                     <h4>85</h4>
                     <p>{t("about.spot")}</p>
                   </span>
                 </div>
-                <div className="about-main__text__icons__box">
-                  {/* <img src={Box3} alt="car-icon" className="last-fk" /> */}
+                <div className="aboutMainTextIconsBox">
+                  <img src={About3} alt="car-icon" className="CarIcon" />
                   <span>
                     <h4>75</h4>
-                    <p>{t("repair")}</p>
+                    <p>{t("about.repair")}</p>
                   </span>
                 </div>
               </div>

@@ -1,28 +1,36 @@
 import PropTypes from "prop-types";
 
 
-function SaleCard({ sales }) {
+function SaleCard({ teamItem }) {
   return (
     <>
       <div className="teamContainerBox">
         <div className="teamContainerBoxImgDiv">
-          <img src={sales.img} alt="teamImg" />
+          <img src={teamItem.img} alt="teamImg" />
         </div>
         <div className="teamContainerBoxDescr">
           <div className="teamContainerBoxDescrTitle">
-            <p>{sales.title}</p>
+            <p>{teamItem.title}</p>
           </div>
           <div className="teamContainerBoxDescrName">
-          <h3>{sales.name}</h3>
+          <h3>{teamItem.name}</h3>
 
           </div>
           <div className="teamContainerBoxDescrJob">
-          <p>{sales.job}</p>
+          <p>{teamItem.job}</p>
           </div>
         </div>
       </div>
     </>
   );
 }
+SaleCard.propTypes = {
+  teamItem: PropTypes.shape({
+    img: PropTypes.string,
+    title: PropTypes.string,
+    name: PropTypes.string,
+    job: PropTypes.string,
+  }).isRequired,
+};
 
 export default SaleCard;

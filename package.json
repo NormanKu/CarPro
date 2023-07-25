@@ -15,6 +15,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
@@ -26,6 +27,8 @@
     "@mui/styled-engine-sc": "^5.12.0",
     "babel-plugin-macros": "^3.1.0",
     "bootstrap": "^5.3.0",
+    "emailjs-com": "^3.2.0",
+    "firebase": "^10.1.0",
     "i18next": "^22.5.1",
     "i18next-browser-languagedetector": "^7.1.0",
     "i18next-intervalplural-postprocessor": "^3.0.0",
@@ -33,6 +36,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.45.2",
     "react-i18next": "^12.3.1",
     "react-icon": "^1.0.0",
     "react-icons": "^4.10.1",

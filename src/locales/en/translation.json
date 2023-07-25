@@ -2,7 +2,7 @@
   "About" : "About",
   "Vehicle" : "Vehicle",
   "Testimonials": "Testimonials",
-  "Sales" : "Sales",
+  "Teams" : "Teams",
   "Contact": "Contact",
   "search":{
     "title" :"Which vehicle you are looking for?",
@@ -31,5 +31,48 @@
     "model":"Honda Civic Type R",
     "detail":"More Details",
     "book":"Test Drive"
+  },
+  "seller":{
+    "title":"Explore variety brands of cars",
+    "desc":"We offer a variety of car brands to our consumers.",
+    "price1":"from $40k",
+    "price2":"from $60k",
+    "price3":"from $50k",
+    "price4":"from $30k"
+  },
+  "faq":{
+    "title":"FAQ",
+    "subtitle":"Frequently Asked Questions",
+    "description":"Frequently Asked Questions About the Car Rental Booking Process on Our Website: Answers to Common Concerns and Inquiries.",
+    "question1":"What makes comparing car rental deals on CarPro unique?",
+    "answer1":"Comparing car rental deals on CarPro is crucial to finding the best deal that aligns with your budget and needs, ensuring the best value for your money. By comparing various options, you can find deals that provide lower rates, additional services, or superior car models. You can discover car rental deals by exploring and comparing prices from different rental companies on our website.",
+    "question2":"How can I find car rental deals on CarPro?",
+    "answer2":"You can uncover car rental deals by exploring and comparing prices from different rental companies on CarPro. Additionally, we recommend subscribing to our email newsletters and following us on social media to stay informed about any special deals or promotions.",
+    "question3":"How can I secure such low car rental prices on CarPro?",
+    "answer3":"Book in advance: Scheduling your car rental ahead of time can often secure lower prices. Compare prices from multiple companies: Use CarPro to evaluate prices from several car rental companies. Look for discount codes and coupons: Search for discount codes and coupons on our website and social media that you can use to reduce the rental price. Renting from a non-airport location can sometimes yield lower prices."
+  },
+  "testimonials" :{
+    "title":"Inspected by the Masses",
+    "subtitle":"Reflections from our Customers",
+    "description":" Uncover the significant strides we&apos;ve undertaken for our patrons through their reflections. They&apos;ve embraced our services and witnessed the outcomes, and they&apos;re zealous to convey their affirmative experiences with you."
+  },
+  "contact":{
+    "name":"Full Name",
+    "message":" Tell us about it ",
+    "submit":"Send Message"
+
+  },
+  "footer":{
+    "company":"Company",
+    "newyork":"New York",
+    "taipei":"Taipei",
+    "tokyo":"Tokyo",
+    "working":"WORKING HOURS",
+    "duration":"Mon - Fri",
+    "duration2":"Sat",
+    "duration3":"Sun",
+    "sub":"Subscription",
+    "subcribe":"Subscribe your Email address for latest news & updates.",
+    "submit":"Submit"
   }
 }
