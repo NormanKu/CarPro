@@ -3,6 +3,12 @@
   "Vehicle" : "所有車輛",
   "Testimonials": "使用者心得",
   "Teams" : "團隊",
+  "login": "登入",
+  "detail": {
+    "title": "車輛型號",
+    "subtitle": "我們的租賃車隊",
+    "description": "從我們的各種驚人車輛中選擇，為您的下一次冒險或商務旅行租車。"
+  },
   "Contact": "聯絡我們",
   "search":{
     "title": "你在找哪款車輛？",
@@ -28,10 +34,21 @@
   },
   "intro":{
     "homeSpan":"找尋你要的新車",
-    "model":"Honda Civic Type R",
+    "model": "租賃/購買你的最佳選擇",
     "detail":"更多資訊",
     "book":"預約試乘"
   },
+  "carbox": {
+    "price": "每日租金",
+    "model": "型號",
+    "mark": "標記",
+    "year": "年份",
+    "doors": "車門數",
+    "ac": "空調",
+    "transmission": "變速器",
+    "fuel": "燃料",
+    "book": "現在預訂"
+},
   "seller": {
     "title": "探索各種品牌的汽車",
     "desc": "我們為消費者提供各種品牌的汽車。",

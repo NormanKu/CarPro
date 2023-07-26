@@ -1,4 +1,4 @@
-
+@forward "../stylesheets/global";
 @forward "../stylesheets/components/_banner.scss";
 @forward "../stylesheets/components/_carcard.scss";
 @forward "../stylesheets/components/_footer.scss";
@@ -11,10 +11,9 @@
 @forward "../stylesheets/components/_trending.scss";
 @forward "../stylesheets/components/_faq.scss";
 @forward "../stylesheets/components/_detail.scss";
-@use "../stylesheets/global";
 @forward "../stylesheets/Pages/About/about";
 @forward "../stylesheets/Pages/Signup/signup";
-@forward "../stylesheets/Pages/Login/login";
+@forward "../stylesheets/Pages/Login/index";
 @forward "../stylesheets/Pages/Teams/teams";
 @forward "../stylesheets/Pages/testimonials/testimonials";
 @forward "../stylesheets/Pages/Vehicle/vehicle";

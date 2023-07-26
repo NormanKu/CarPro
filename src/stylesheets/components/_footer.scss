@@ -15,7 +15,6 @@
         flex-direction: column;
         .footerTitle{
           align-self: flex-start;
-
           display: block;
           padding-bottom: .5rem;
           font-size: 16px;
@@ -28,10 +27,37 @@
 
           .footerLi{
             color: var(--textColor);
+
+            a{
+              text-decoration: none;
+              color: var(--textColor);
+            }
+
+            .email{
+              width: 100%;
+            }
+
             &:hover{
               color: var(--blackColor);
               transform: translateX(5px);
               transition: .3s;
+            }
+
+            .email{
+              width: 100%;
+            }
+
+            .submitEmail{
+              width: 100%;
+              background: black;
+              color: white;
+              border-radius: 0.3rem;
+              box-shadow: 0 3px 3px 0 rgb(27, 27, 27);
+              cursor: pointer;
+              font-weight: 700;
+              padding: 0.5rem 0.5rem;
+              text-decoration: none;
+              transition: all .3s;
             }
           }
         }
@@ -62,6 +88,10 @@
 
             .footerLi{
               color: var(--textColor);
+              a{
+                text-decoration: none;
+                color: var(--textColor);
+              }
 
               .email{
                 width: 100%;
@@ -72,7 +102,7 @@
                 background: black;
                 color: white;
                 border-radius: 0.3rem;
-                box-shadow: 0 10px 15px 0 rgb(27, 27, 27);
+                box-shadow: 0 3px 3px 0 rgb(27, 27, 27);
                 cursor: pointer;
                 font-weight: 700;
                 padding: 0.5rem 0.5rem;
@@ -98,6 +128,23 @@
     .footerContainer{
       .footerMenuDiv{
         grid-template-columns: repeat(3, 1fr);
+
+        .email{
+          width: 100%;
+        }
+
+        .submitEmail{
+          width: 100%;
+          background: black;
+          color: white;
+          border-radius: 0.3rem;
+          box-shadow: 0 3px 3px 0 rgb(27, 27, 27);
+          cursor: pointer;
+          font-weight: 700;
+          padding: 0.5rem 0.5rem;
+          text-decoration: none;
+          transition: all .3s;
+        }
       }
     }
   }
@@ -109,6 +156,35 @@
       padding: 2rem;
       .footerMenuDiv{
         grid-template-columns: repeat(4, 1fr);
+
+        .footerUl{
+          .footerLi{
+            a{
+              text-decoration: none;
+              color: var(--textColor);
+            }
+
+            .email{
+              width: 100%;
+            }
+          }
+        }
+        .email{
+          width: 100%;
+        }
+
+        .submitEmail{
+          width: 100%;
+          background: black;
+          color: white;
+          border-radius: 0.3rem;
+          box-shadow: 0 3px 3px 0 rgb(27, 27, 27);
+          cursor: pointer;
+          font-weight: 700;
+          padding: 0.5rem 0.5rem;
+          text-decoration: none;
+          transition: all .3s;
+        }
       }
     }
   }

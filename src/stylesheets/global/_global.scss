@@ -18,6 +18,14 @@
   --blackColor: #000000;
 }
 
+// Define font size variables
+$fontSizeH1: 2.5rem;
+$fontSizeH2: 2rem;
+$fontSizeH3: 1.75rem;
+$fontSizeH4: 1.5rem;
+$fontSizeH5: 1.25rem;
+$fontSizeH6: 1rem;
+
 li {
   list-style: none;
 }
@@ -88,8 +96,38 @@ img {
   font-size: 20px;
 }
 
+h1 {
+  font-size: $fontSizeH1;
+}
+
+h2 {
+  font-size: $fontSizeH2;
+}
+
+h3 {
+  font-size: $fontSizeH3;
+}
+
+h4 {
+  font-size: $fontSizeH4;
+}
+
+h5 {
+  font-size: $fontSizeH5;
+}
+
+h6 {
+  font-size: $fontSizeH6;
+}
+
 //Media queries to make APP Component responsive
 @media screen and (min-width: 940px) {
+  $fontSizeH1: 2rem;
+  $fontSizeH2: 1.75rem;
+  $fontSizeH3: 1.5rem;
+  $fontSizeH4: 1.25rem;
+  $fontSizeH5: 1rem;
+  $fontSizeH6: 0.875rem;
 
   .section{
     padding: 6rem 0 4rem;
@@ -100,10 +138,97 @@ img {
     margin: auto;
   }
 
+  h1 {
+    font-size: $fontSizeH1;
+  }
+
+  h2 {
+    font-size: $fontSizeH2;
+  }
+
+  h3 {
+    font-size: $fontSizeH3;
+  }
+
+  h4 {
+    font-size: $fontSizeH4;
+  }
+
+  h5 {
+    font-size: $fontSizeH5;
+  }
+
+  h6 {
+    font-size: $fontSizeH6;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  $fontSizeH1: 1.75rem;
+  $fontSizeH2: 1.5rem;
+  $fontSizeH3: 1.25rem;
+  $fontSizeH4: 1rem;
+  $fontSizeH5: 0.875rem;
+  $fontSizeH6: 0.75rem;
+
   .container{
     width: 75%;
+  }
+
+  h1 {
+    font-size: $fontSizeH1;
+  }
+
+  h2 {
+    font-size: $fontSizeH2;
+  }
+
+  h3 {
+    font-size: $fontSizeH3;
+  }
+
+  h4 {
+    font-size: $fontSizeH4;
+  }
+
+  h5 {
+    font-size: $fontSizeH5;
+  }
+
+  h6 {
+    font-size: $fontSizeH6;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  $fontSizeH1: 1.5rem;
+  $fontSizeH2: 1.25rem;
+  $fontSizeH3: 1rem;
+  $fontSizeH4: 0.875rem;
+  $fontSizeH5: 0.75rem;
+  $fontSizeH6: 0.625rem;
+
+  h1 {
+    font-size: $fontSizeH1;
+  }
+
+  h2 {
+    font-size: $fontSizeH2;
+  }
+
+  h3 {
+    font-size: $fontSizeH3;
+  }
+
+  h4 {
+    font-size: $fontSizeH4;
+  }
+
+  h5 {
+    font-size: $fontSizeH5;
+  }
+
+  h6 {
+    font-size: $fontSizeH6;
   }
 }

@@ -27,21 +27,17 @@
         display: flex;
         flex-direction: column;
 
-
-
         h4 {
-          font-family: Rubik,sans-serif;
-          font-size: 2.2rem;
+          font-size: $fontSizeH4;
           font-weight: 500;
           }
         h2 {
-          font-size: 4.2rem;
+          font-size: $fontSizeH2;
           margin-bottom: 1.4rem;
           font-weight: 700;
           }
         p {
           color: #706f7b;
-          font-family: Rubik,sans-serif;
           font-size: 1.6rem;
           line-height: 1.4;
           }
@@ -79,18 +75,6 @@
 
       }
 
-      // .allTestimonials{
-      //   display: grid;
-      //   grid-gap: 3rem;
-      //   align-items: center;
-      //   gap: 3rem;
-      //   grid-template-columns: 1fr 1fr;
-      //   grid-template-rows: auto;
-      //   margin: 0 auto;
-      //   padding: 10rem 0;
-      //   text-align: center;
-      //   width: 80%;
-      // }
     }
   }
 

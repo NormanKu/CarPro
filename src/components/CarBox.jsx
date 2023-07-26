@@ -1,6 +1,10 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 
 function CarBox({ data, carID }) {
+  const { t } = useTranslation();
+
   const [carLoad, setCarLoad] = useState(true);
   return (
     <>
@@ -19,47 +23,47 @@ function CarBox({ data, carID }) {
           {/* description */}
           <div className="pickDescription">
             <div className="pickDescription__price">
-              <span>${car.price}</span>/ rent per day
+              <span>${car.price}</span>/ {t("carbox.price")}
             </div>
             <div className="pickDescriptionTable">
               <div className="pickDescriptionTableCol">
-                <span>Model</span>
+                <span>{t("carbox.model")}</span>
                 <span>{car.model}</span>
               </div>
 
               <div className="pickDescriptionTableCol">
-                <span>Mark</span>
+                <span>{t("carbox.mark")}</span>
                 <span>{car.mark}</span>
               </div>
 
               <div className="pickDescriptionTableCol">
-                <span>Year</span>
+                <span>{t("carbox.year")}</span>
                 <span>{car.year}</span>
               </div>
 
               <div className="pickDescriptionTableCol">
-                <span>Doors</span>
+                <span>{t("carbox.doors")}</span>
                 <span>{car.doors}</span>
               </div>
 
               <div className="pickDescriptionTableCol">
-                <span>AC</span>
+                <span>{t("carbox.ac")}</span>
                 <span>{car.air}</span>
               </div>
 
               <div className="pickDescriptionTableCol">
-                <span>Transmission</span>
+                <span>{t("carbox.transmission")}</span>
                 <span>{car.transmission}</span>
               </div>
 
               <div className="pickDescriptionTableCol">
-                <span>Fuel</span>
+                <span>{t("carbox.fuel")}</span>
                 <span>{car.fuel}</span>
               </div>
             </div>
             {/* btn cta */}
             <a className="cta-btn" href="#booking-section">
-              Book Now
+              {t("carbox.book")}
             </a>
           </div>
         </div>

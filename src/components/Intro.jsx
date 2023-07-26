@@ -18,7 +18,7 @@ const Intro = () => {
 
   useEffect(() => {
     const onPageScroll = () => {
-      if (window.pageYOffset > 600) {
+      if (window.scrollY > 600) {
         setGoUp(true);
       } else {
         setGoUp(false);

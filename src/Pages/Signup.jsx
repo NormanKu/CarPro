@@ -49,9 +49,7 @@ export default function App() {
     {!!errors["Confirm Password"] && (
       <p>{errors["Confirm Password"]?.message?.toString() || "Invalid"}</p>
     )}
-     {password !== confirmPassword && (
-      <p>Password and confirm password do not match</p>
-    )}
+
     <input type="submit" className="submit-input" />
   </form>
   );

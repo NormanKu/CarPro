@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
 
-
 const Footer = () => {
-
   const { t } = useTranslation();
 
   const [email, setEmail] = useState("");
@@ -14,7 +12,8 @@ const Footer = () => {
 
     try {
       const templateParams = {
-        to_name: email.split("@")[0], // Assuming the name is the part before @ in the email
+        // Assuming the name is the part before @ in the email
+        to_name: email.split("@")[0],
         to_email: email,
         from_name: "CarPro",
         message: "Thank you for subscribing to our newsletter!",
@@ -80,8 +79,12 @@ const Footer = () => {
           <div className="singleGrid">
             <span className="footerTitle">{t("footer.working")}</span>
             <ul className="footerUl grid">
-              <li className="footerLi">{t("footer.duration")}: 9:00AM - 9:00PM</li>
-              <li className="footerLi">{t("footer.duration2")}: 9:00AM - 19:00PM </li>
+              <li className="footerLi">
+                {t("footer.duration")}: 9:00AM - 9:00PM
+              </li>
+              <li className="footerLi">
+                {t("footer.duration2")}: 9:00AM - 19:00PM{" "}
+              </li>
               <li className="footerLi">{t("footer.duration3")}: Closed</li>
             </ul>
           </div>
@@ -89,9 +92,7 @@ const Footer = () => {
           <div className="singleGrid">
             <span className="footerTitle">{t("footer.sub")}</span>
             <ul className="footerUl grid">
-              <li className="footerLi">
-                {t("footer.subcribe")}
-              </li>
+              <li className="footerLi">{t("footer.subcribe")}</li>
               <li className="footerLi">
                 <input
                   type="email"

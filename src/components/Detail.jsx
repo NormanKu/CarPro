@@ -1,8 +1,12 @@
 import { useState } from "react";
 import CarBox from "./CarBox";
 import { CAR_DATA } from "./data/CarData";
+import { useTranslation } from "react-i18next";
+
 
 function Detail() {
+  const { t } = useTranslation();
+
   const [active, setActive] = useState("SecondCar");
   const [colorBtn, setColorBtn] = useState("btn1");
 
@@ -20,11 +24,10 @@ function Detail() {
         <div className="container">
           <div className="pickContainer">
             <div className="pickContainerTitle">
-              <h3>Vehicle Models</h3>
-              <h2>Our rental fleet</h2>
-              <p>
-                Choose from a variety of our amazing vehicles to rent for your
-                next adventure or business trip
+              <h3>{t("detail.title")}</h3>
+              <h2>{t("detail.subtitle")}</h2>
+              <p>{t("detail.description")}
+
               </p>
             </div>
             <div className="pickContainerCarContent">

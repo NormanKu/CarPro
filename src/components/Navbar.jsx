@@ -124,7 +124,7 @@ function Navbar() {
         <div className="signUp flex">
           <Link onClick={linkPage} to="/login">
             <Button variant="secondary" className="text">
-              Login
+              {t("login")}
             </Button>
           </Link>
 
