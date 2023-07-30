@@ -3,8 +3,8 @@ This is a minimalist e-commerce website built with React and Tailwind. This webs
 
 👉 Live Demo: [CarPro](https://car-pro-five.vercel.app/)
 
-Build with:
-» Scss
-» React JS
+Build with:  
+» Scss  
+» React JS  
 
 Screenshots of the Project 📸
