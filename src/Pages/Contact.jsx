@@ -35,6 +35,7 @@ function Contact() {
     { lat: 40.613099, long: -74.036969, branch: "New York" },
     { lat: 35.594519, long: 139.651665, branch: "Tokyo" },
   ];
+
   const [viewPort, setViewPort] = useState({
     latitude: 25.0418254,
     longitude: 121.5149875,
@@ -53,7 +54,7 @@ function Contact() {
                 width="100%"
                 height="100%"
                 transitionDuration={200}
-                mapStyle="mapbox://styles/kunorman4/clkf18gac001z01q2eosb971o"
+                mapStyle="mapbox://styles/mapbox/streets-v11"
                 onViewStateChange={(viewPort) => setViewPort(viewPort)}
               >
                 {places.map((place) => (
