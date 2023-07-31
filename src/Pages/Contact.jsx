@@ -54,7 +54,7 @@ function Contact() {
                 width="100%"
                 height="100%"
                 transitionDuration={200}
-                mapStyle="mapbox://styles/mapbox/streets-v11"
+                mapStyle="mapbox://styles/kunorman4/clkf18gac001z01q2eosb971o"
                 onViewStateChange={(viewPort) => setViewPort(viewPort)}
               >
                 {places.map((place) => (
