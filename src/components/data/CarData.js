@@ -1,26 +1,30 @@
 import Car1 from "../../assets/images/car1.jpg";
+import Audi from "../../assets/images/audi.png";
+import Mercedes from "../../assets/images/mercedes.png";
+import Porsche from "../../assets/images/porsche.png";
+import Tesla from "../../assets/images/pngimg.com - tesla_car_PNG60.png";
 
 
 export const CAR_DATA = [
   [
     {
-      name: "VW Golf 6",
-      price: "37",
-      img: Car1,
-      model: "Golf 6",
-      mark: "Volkswagen",
-      year: "2008",
+      name: "Tesla Model S",
+      price: "99",
+      img: Tesla,
+      model: "Model S",
+      mark: "Tesla",
+      year: "2021",
       doors: "4/5",
       air: "Yes",
-      transmission: "Manual",
-      fuel: "Diesel",
+      transmission: "Automatic",
+      fuel: "Electric",
     },
   ],
   [
     {
       name: "Audi A1 S-Line",
       price: "45",
-      img: Car1,
+      img: Audi,
       model: "Audi",
       mark: "A1",
       year: "2012",
@@ -32,23 +36,23 @@ export const CAR_DATA = [
   ],
   [
     {
-      name: "Toyota Camry",
-      price: "30",
+      name: "Porsche 911",
+      price: "120",
       img: Car1,
-      model: "Camry",
-      mark: "Toyota",
-      year: "2006",
-      doors: "4/5",
+      model: "911",
+      mark: "Porsche",
+      year: "2021",
+      doors: "2",
       air: "Yes",
-      transmission: "Automatic",
-      fuel: "Hybrid",
+      transmission: "Manual",
+      fuel: "Gasoline",
     },
   ],
   [
     {
-      name: "BMW 320 ModernLine",
+      name: "Porsche Taycan",
       price: "35",
-      img: Car1,
+      img: Porsche,
       model: "320",
       mark: "BMW",
       year: "2012",
@@ -60,9 +64,9 @@ export const CAR_DATA = [
   ],
   [
     {
-      name: "Mercedes-Benz GLK",
+      name: "Mercedes GLK",
       price: "50",
-      img: Car1,
+      img: Mercedes,
       model: "Benz GLK",
       mark: "Mercedes",
       year: "2006",
