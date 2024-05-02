@@ -15,6 +15,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+
+        "viewport-mercator-project": "^7.0.4",
+        "core-js": "^3.23.3",
+
     "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -48,6 +52,7 @@
     "swiper": "^10.0.4"
   },
   "devDependencies": {
+    "eslint": "^8.0.0",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@vitejs/plugin-react": "^4.0.1",
