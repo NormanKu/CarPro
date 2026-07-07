@@ -49,7 +49,7 @@
     "react-router-dom": "^6.14.2",
     "serve": "^14.2.0",
     "styled-components": "^5.3.11",
-    "swiper": "^10.0.4"
+    "swiper": "^14.0.0"
   },
   "devDependencies": {
     "eslint": "^8.0.0",
