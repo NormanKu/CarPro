@@ -19,7 +19,7 @@
         "viewport-mercator-project": "^7.0.4",
         "core-js": "^3.23.3",
 
-    "@emailjs/browser": "^3.11.0",
+    "@emailjs/browser": "^4.0.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
